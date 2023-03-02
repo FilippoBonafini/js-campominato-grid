@@ -3,6 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.initial{
+    position: absolute;
+    top: 50%;
+    transform: translateX(50%);
+    right: 50%;
+    text-align: center;
 }
 
 body{
@@ -10,11 +23,61 @@ body{
     display: flex;
     height: 100vh;
     flex-direction: column;
+    font-family: 'Prompt', sans-serif;
 }
 
 header, footer{
     padding: 1.25rem;
     background-color: rgb(205, 215, 250);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 49px;
+    font-weight: bolder;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+    background-color: white;
+    padding: .625rem 1.25rem;
+    border-radius: 1.25rem;
+    min-width: 130px;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+li:hover{
+    background-color: rgba(0, 0, 0, 0.615);
+    color: white;
+}
+
+header img{
+    height: 60px;
+}
+
+.board .cell.modeSelected{
+    background-color: rgba(0, 0, 0, 0.818);
+    color: white;
 }
 
 main{
@@ -52,20 +115,24 @@ main{
 
 .board .cell:hover{
     background-color: rgba(145, 145, 135, 0.671);
-
 }
 
-.board .cell .easy{
+.board .cell.modeSelected:hover{
+    background-color: rgba(0, 0, 0, 0.818);
+    cursor:auto;
+}
+
+.board .cell.easy{
     width: calc(100% /10 - 5px);
     height:calc(100% /10 - 5px);
 }
 
-.board .cell .normal{
-    width: calc(100% /10 - 5px);
-    height:calc(100% /10 - 5px);
+.board .cell.normal{
+    width: calc(100% /9 - 5px);
+    height:calc(100% /9 - 5px);
 }
 
-.board .cell .hard{
-    width: calc(100% /10 - 5px);
-    height:calc(100% /10 - 5px);
+.board .cell.hard{
+    width: calc(100% /7 - 5px);
+    height:calc(100% /7 - 5px);
 }
