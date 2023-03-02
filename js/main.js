@@ -25,8 +25,9 @@ function myAppendElement(containerElement, htmlElement){
 // ----
 let cellNumber = 100;
 const containerBoard = document.querySelector('.board');
-
+const startGame = document.querySelector('.startMenu')
 for(let i = 1; i<= cellNumber; i++){
     const createdElement = myCreateElement('div','cell', i);
     myAppendElement(containerBoard, createdElement);
 }
+
