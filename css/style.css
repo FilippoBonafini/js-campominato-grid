@@ -1,0 +1,71 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(33, 33, 44);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+header, footer{
+    padding: 1.25rem;
+    background-color: rgb(205, 215, 250);
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    width: 700px;
+    height: 700px;
+    background-color: rgba(109, 166, 228, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.board .cell{
+    background-color: rgba(94, 94, 87, 0.721);
+    cursor: pointer;
+    margin: 2.5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* DEBUG */
+    width: calc(100% /10 - 5px);
+    height:calc(100% /10 - 5px);
+    /* DEBUG */
+}
+
+.board .cell:hover{
+    background-color: rgba(145, 145, 135, 0.671);
+
+}
+
+.board .cell .easy{
+    width: calc(100% /10 - 5px);
+    height:calc(100% /10 - 5px);
+}
+
+.board .cell .normal{
+    width: calc(100% /10 - 5px);
+    height:calc(100% /10 - 5px);
+}
+
+.board .cell .hard{
+    width: calc(100% /10 - 5px);
+    height:calc(100% /10 - 5px);
+}
