@@ -11,12 +11,12 @@ function myCreateElement(htmlElement,className1,className2,htmlValue){
     element.classList.add(className2);
     element.classList.add('cell-'+htmlValue);
     element.innerText = htmlValue;
-    // DEBUG 
+
     element.addEventListener('click', function(){
         console.log(htmlValue);
         element.classList.add('modeSelected')
     })
-    // DEBUG 
+
     return element;
 }
 

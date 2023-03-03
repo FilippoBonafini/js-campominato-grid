@@ -16,10 +16,11 @@
 </head>
 <body>
     
-    <header>
+    <header oncontextmenu="return false">
         <div class="logo">
             <img src="img/logo-boolean.png" alt="">
-            <span>CAMPO MINATO</span>
+            <span class="green">CAMPO</span>
+            <span class="blu">MINATO</span>
         </div>
 
         <ul class="initial" id="menuHeader">
@@ -31,13 +32,15 @@
     </header>
 
     <main>
-        <div class="hidden" id="containerBoard">
+        <div class="hidden" id="containerBoard" oncontextmenu="return false">
             <div class="board">
             </div>
         </div>
     </main>
 
-    <footer>footer</footer>
+    <footer oncontextmenu="return false">
+        footer
+    </footer>
 
     <!-- IMPORTO JS -->
     <script src="js/main.js"></script>
