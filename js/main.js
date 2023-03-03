@@ -45,18 +45,21 @@ function myRemoveClass (elemento1,nomeClasse1){
     elemento1.classList.remove(nomeClasse1);
 }
 
+
 // ----
 // MAIN
 // ----
+
 let cellNumber;
 const containerBoard = document.querySelector('.board');
 const startGame = document.querySelector('.startMenu');
 
 const containerBoardMain = document.getElementById('containerBoard');
 const initailMenu = document.getElementById('initialMenu');
+
 const classHidden = 'hidden';
 const classInitialMenu = 'initial';
-const menuHeader = document.getElementById('menuHeader');
+
 
 const headerButtonEasy = document.getElementById('easyButton');
 const headerButtonNormal = document.getElementById('normalButton');

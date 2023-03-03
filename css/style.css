@@ -131,6 +131,7 @@ main{
 .board .cell.modeSelected:hover{
     background-color: rgba(0, 0, 0, 0.818);
     cursor:auto;
+    border: none;
 }
 
 .board .cell.easy{
